@@ -4,7 +4,7 @@ import SocialLinks from "./Components/SocialLinks";
 
 export default function Home() {
   return (
-    <div className="border-8 border-[#3bbad8] max-w-max rounded-3xl mx-auto mt-[40px]">
+    <div className="border-8 border-[#3bbad8] max-w-max max-h-max rounded-3xl mx-auto mt-[40px]">
       <div className="border-8 border-[#c64623] rounded-2xl">
         <div className="p-4 flex justify-center items-center">
           <Television />
