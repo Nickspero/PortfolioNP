@@ -3,7 +3,7 @@ import { CgDarkMode } from "react-icons/cg";
 
 const Nav = () => {
   return (
-    <nav className="flex justify-between items-center mx-4">
+    <nav className="w-full flex px-4 justify-between sticky top-0 left-0 items-center">
       <figure className="w-[88px] h-[88px]">
         <img className="w-full h-full" src="/logo.png" alt="logo" />
       </figure>

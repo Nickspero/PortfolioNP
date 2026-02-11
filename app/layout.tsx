@@ -16,9 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={roboto.className}>
-      <body className="bg-[#ede6d7] flex flex-col h-screen w-full">
+      <body className="bg-[#ede6d7]">
+        <main className="w-full relative h-screen">
         <Nav/>
-        <main className="flex flex-1">
         {children}
         </main>
       </body>
