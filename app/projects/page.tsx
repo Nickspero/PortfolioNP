@@ -1,12 +1,9 @@
 "use client";
-
-import { useState } from "react";
 import Footer from "../Components/Footer";
-import Project from "../Components/Project";
+import { FaLink } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 const page = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-
   const projects = [
     {
       img: "/skinstric.png",
@@ -17,6 +14,7 @@ const page = () => {
       git: "https://github.com/Nickspero/Skinstric",
       column: 1,
       row: 2,
+      logo: "/skinlogo.png",
     },
     {
       img: "/nft.png",
@@ -27,6 +25,7 @@ const page = () => {
       git: "https://github.com/Nickspero/NickPappas-Internship",
       column: 1,
       row: 1,
+      logo: "/nftlogo.png",
     },
     {
       img: "/omdb.png",
@@ -37,16 +36,18 @@ const page = () => {
       git: "https://github.com/Nickspero/OMDb-React",
       column: 2,
       row: 1,
+      logo: "/omdblogo.png",
     },
     {
       img: "/summarist.png",
       title: "Summarist",
-      desc: "Book summary service with fully functioning Firebase Authentication and Stripe Payment Integration. Get quick summaries of some of the most popular book titles of the last decade!",
+      desc: "Book summary service with fully functioning Audio Playback, Firebase Authentication, and Stripe Payment Integration. Get quick summaries of some of the most popular book titles of the last decade!",
       link: "https://summarist-cyan.vercel.app/",
       tech: "NextJS, CSS",
       git: "https://github.com/Nickspero/summarist",
       column: 1,
       row: 1,
+      logo: "/sumlogo.png",
     },
     {
       img: "/treact.png",
@@ -57,6 +58,7 @@ const page = () => {
       git: "https://github.com/Nickspero/Treact-Project",
       column: 1,
       row: 1,
+      logo: "/trelogo.png",
     },
     {
       img: "/library.png",
@@ -67,6 +69,7 @@ const page = () => {
       git: "https://github.com/Nickspero/Library-React",
       column: 1,
       row: 1,
+      logo: "/liblogo.png",
     },
   ];
 
@@ -74,7 +77,9 @@ const page = () => {
     <div className="h-full">
       <div className="p-4">
         <div className="mx-auto w-max flex flex-col justify-center items-center">
-          <h1 className="font-bold text-[60px] text-[#c64623]">My Projects</h1>
+          <h1 className="font-bold text-[60px] text-[#c64623]">
+            Some of My Projects
+          </h1>
           <p className="text-[24px] text-[#c64623]">
             Code, Design, and everything in between.
           </p>
@@ -84,9 +89,42 @@ const page = () => {
           {projects.map((project, index) => (
             <figure
               key={index}
-              className={`project__figure col-span-${project.column} row-span-${project.row}`}>
+              className="project__figure"
+              style={{
+                gridColumn: `span ${project.column}`,
+                gridRow: `span ${project.row}`,
+              }}
+            >
+              <a href={`#${project.title}`}>
               <img className="project__img" src={project.img} alt="" />
+              </a>
             </figure>
+          ))}
+        </div>
+        <div className="flex flex-col mb-[120px] mx-auto w-full">
+          {projects.map((project, index) => (
+            <div className="mx-auto" id={project.title} key={index}>
+              <div className="bg-[#c64623] max-w-[1200px] h-[1px] "></div>
+              <div className="p-12">
+                <img className="w-[200px]" src={project.logo} alt="" />
+                <p className="mt-4 mb-4 max-w-[1000px] text-[20px]">
+                  {project.desc}
+                </p>
+                <h3 className="text-[20px] font-bold">Tech:</h3>
+                <p className="text-[20px]">{project.tech}</p>
+                <div className="flex flex-col mt-4 mb-4">
+                  <p className="text-[20px] font-bold">Links:</p>
+                  <div className="flex  gap-4">
+                    <a href={project.link}>
+                      <FaLink className="w-8 h-8" />
+                    </a>
+                    <a href={project.git}>
+                      <FaGithub className="w-8 h-8" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>

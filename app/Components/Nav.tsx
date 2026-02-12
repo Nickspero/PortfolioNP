@@ -1,9 +1,26 @@
+"use client";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { CgDarkMode } from "react-icons/cg";
 
 const Nav = () => {
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="w-full flex px-4 justify-between sticky top-0 left-0 items-center">
+    <nav className={`w-full flex px-4 justify-between sticky transition-opacity top-0 left-0 items-center ${hidden? "opacity-0 pointer-events-none" : "opacity-100"}`}>
       <figure className="w-[88px] h-[88px]">
         <img className="w-full h-full" src="/logo.png" alt="logo" />
       </figure>

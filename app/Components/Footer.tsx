@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="bg-[#377e80] relative">
@@ -6,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-center">
           <div className="text-center">
-            <figure className="mb-4">
+            <figure className="my-4">
               <img
                 id="personal-logo"
                 src="/logo-border.png"
@@ -16,30 +18,35 @@ const Footer = () => {
             </figure>
 
             <div className="my-6">
-              <a
-                className="mx-6 font-bold text-black hover:underline"
+              <Link
+                className="relative inline-block group mx-6 font-bold text-black"
                 href="https://github.com/Nickspero"
                 target="_blank"
               >
                 Github
-              </a>
-              <a
-                className="mx-6 font-bold text-black hover:underline"
+                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
+              <Link
+                className="relative inline-block group mx-6 font-bold text-black"
                 href="https://www.linkedin.com/in/nickpappas99"
                 target="_blank"
               >
                 LinkedIn
-              </a>
-              <a className="mx-6 font-bold text-black hover:underline">
+                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
+              <Link className="relative inline-block group mx-6 font-bold text-black" 
+              href="/contact">
                 Contact
-              </a>
-              <a
-                className="mx-6 font-bold text-black hover:underline"
+                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
+              <Link
+                className="relative inline-block group mx-6 font-bold text-black"
                 href="./TechRes.pdf"
                 target="_blank"
               >
                 Resume
-              </a>
+                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </Link>
             </div>
 
             <p className="font-bold mb-4">

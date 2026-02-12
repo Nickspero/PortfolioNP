@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={`${roboto.className} scroll-smooth`}>
       <body className="bg-[#ede6d7]">
         <main className="w-full relative h-screen">
         <Nav/>
