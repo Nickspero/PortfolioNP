@@ -24,9 +24,9 @@
 }
 
 .tech{
-  width: 150px;
-  height: 150px;
-  padding: 16px;
+  width: 120px;
+  height: 120px;
+  padding: 8px;
   position: relative;
   display: flex;
   flex-direction: column;
