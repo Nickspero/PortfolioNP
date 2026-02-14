@@ -1,10 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { CgDarkMode } from "react-icons/cg";
+import { openModal } from "../store/useStore";
+import { FaToggleOn } from "react-icons/fa";
+import { FaToggleOff } from "react-icons/fa6";
 
 const Nav = () => {
   const [hidden, setHidden] = useState(false);
+
+  const open = openModal((state) => state.open)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,11 +39,11 @@ const Nav = () => {
           Projects
           <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
         </Link>
-        <Link href="/contact" className="relative mx-4 inline-block group">
+        <div onClick={open} className="relative mx-4 inline-block group cursor-pointer">
           Contact
           <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
-        </Link>
-        <CgDarkMode className="cursor-pointer w-6 h-6 mx-4 hover:scale-125 transform transition duration-300" />
+        </div>
+        <FaToggleOff className="cursor-pointer w-6 h-6 mx-4 hover:scale-125 transform transition duration-300" />
       </div>
     </nav>
   );

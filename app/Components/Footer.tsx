@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactBtn from "./ContactBtn";
 
 const Footer = () => {
   return (
@@ -59,6 +60,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <ContactBtn/>
     </footer>
   );
 };

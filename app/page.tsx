@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Television from "./Components/Television";
 import SocialLinks from "./Components/SocialLinks";
+import ContactBtn from "./Components/ContactBtn";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
         <SocialLinks />
       </div>
+      <ContactBtn/>
     </div>
   );
 }

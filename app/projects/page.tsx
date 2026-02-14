@@ -2,6 +2,8 @@
 import Footer from "../Components/Footer";
 import { FaLink } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
+
 
 const page = () => {
   const projects = [
@@ -130,8 +132,8 @@ const page = () => {
             href="#"
             className="text-[24px] mx-auto hover:scale-105 transform transition duration-300 cursor-pointer"
           >
-                <p className="text-center font-bold my-auto text-[40px] text-[#c64623]">
-                  ↑
+                <p className="font-bold flex justify-center my-auto text-[40px] text-[#c64623]">
+                  <FaRegArrowAltCircleUp />
                 </p>
                 <p className="font-bold text-[20px]">Back to top</p>
               

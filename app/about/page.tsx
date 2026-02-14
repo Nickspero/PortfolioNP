@@ -2,19 +2,19 @@ import Footer from "../Components/Footer";
 import MyTech from "../Components/MyTech";
 
 const page = () => {
+
   return (
     <div className="w-full">
       <div className="flex flex-col gap-24">
-        <div className="pt-8 pr-8 pl-8 mx-auto max-w-[1200px]">
-          <div className="max-w-max">
-            <h1 className="text-[80px]">
+         <div className="pt-8 px-8 mx-auto max-w-[1200px]">
+        <div className="max-w-max">
+            <h1 className="text-[60px] font-bold">
               About <span className="text-[#c64623]">Me.</span>
             </h1>
             <div className="bg-[#c64623] w-full h-[1px]"></div>
           </div>
-
-          <div className="flex relative">
-            <div className="text w-[50%]">
+          <div className="flex justify-center gap-24">
+            <div className="mt-[20px] max-w-[50%] text-[24px] flex flex-col gap-4">
               <p className="text-[24px] mt-[40px]">
                 I'm a skilled{" "}
                 <span className="text-[#3bbad8]">Frontend Web Developer </span>
@@ -29,37 +29,36 @@ const page = () => {
                 </span>
               </p>
             </div>
-            <div className="w-[50%] relative">
-              <img
-                className="w-150 absolute top-[-160px] right-0"
-                src="/uxui2.gif"
-                alt=""
-              />
-            </div>
+            <img className="w-80" src="/UX_UI.gif" alt="" />
           </div>
         </div>
 
         <MyTech />
 
-        <div className="pt-8 pr-8 pl-8 mx-auto max-w-[1200px]">
+        <div className="pt-8 px-8 mx-auto max-w-[1200px]">
           <h1 className="text-[60px] text-center font-bold text-[#c64623]">
             Adaptability
           </h1>
-          <div className="mt-[20px] text-[24px] max-w-[1000px] text-center flex flex-col gap-4">
-            <p>
-              Technology is advancing at an exponential pace, transforming how
-              we work, communicate, and experience the web.
-            </p>
-            <p>
-              I stay adaptable and curious, quickly learning and applying new
-              tools to create modern, high-performing experiences.
-            </p>
-            <p>
-              For me, rapid change is an opportunity to innovate and push the
-              boundaries of what users can interact with.
-            </p>
+          <div className="flex justify-center gap-24">
+            <img className="w-80" src="/AI.gif" alt="" />
+            <div className="mt-[20px] max-w-[50%] text-[24px] flex flex-col gap-4">
+              <p>
+                I embrace the rapid pace of the abrupt technological changes we
+                see today, staying{" "}
+                <span className="text-[#3bbad8]">adaptable and curious</span> to
+                quickly learn and apply new tools.
+              </p>
+              <p>
+                This allows me to create{" "}
+                <span className="text-[#3bbad8]">modern, high-performing</span>{" "}
+                experiences and continually push the boundaries of user
+                interaction.
+              </p>
+            </div>
           </div>
         </div>
+
+       
 
         <Footer />
       </div>
