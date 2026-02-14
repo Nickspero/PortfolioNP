@@ -96,7 +96,7 @@ const page = () => {
               }}
             >
               <a href={`#${project.title}`}>
-              <img className="project__img" src={project.img} alt="" />
+                <img className="project__img" src={project.img} alt="" />
               </a>
             </figure>
           ))}
@@ -126,6 +126,16 @@ const page = () => {
               </div>
             </div>
           ))}
+          <a
+            href="#"
+            className="text-[24px] mx-auto hover:scale-105 transform transition duration-300 cursor-pointer"
+          >
+                <p className="text-center font-bold my-auto text-[40px] text-[#c64623]">
+                  ↑
+                </p>
+                <p className="font-bold text-[20px]">Back to top</p>
+              
+          </a>
         </div>
       </div>
       <Footer />

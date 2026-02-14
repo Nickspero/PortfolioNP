@@ -22,7 +22,9 @@ const Nav = () => {
   return (
     <nav className={`w-full flex px-4 justify-between sticky transition-opacity top-0 left-0 items-center ${hidden? "opacity-0 pointer-events-none" : "opacity-100"}`}>
       <figure className="w-[88px] h-[88px]">
+        <Link href={"/"}>
         <img className="w-full h-full" src="/logo.png" alt="logo" />
+        </Link>
       </figure>
       <div className="flex font-bold">
         <Link href="/about" className="relative mx-4 inline-block group">
