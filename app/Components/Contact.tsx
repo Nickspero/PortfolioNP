@@ -46,7 +46,7 @@ const Contact = () => {
 
   return (
     <div className="absolute bg-[#ede6d7] z-20 flex justify-center items-center top-0 right-0 w-full h-full">
-      <div className="max-w-[900px] w-[80%] p-14 rounded-2xl bg-[#377E80] shadow-2xl relative">
+      <div className="max-w-[900px] w-[80%] p-14 rounded-2xl bg-gradient-to-br from-[#37c6c9] via-[#377E80] to-[#0f2f3a] shadow-2xl relative">
         {(!loading && !success) && 
         <>
         <h1 className="text-[40px] font-bold">Let's Talk!</h1>
@@ -76,7 +76,7 @@ const Contact = () => {
         {loading && <>Loading...</>}
         {success && <>Success</>}
         <FaSquareXmark
-          className="absolute text-[24px] right-4 top-4 cursor-pointer hover:scale-120 transform transition duration-300 active:scale-100"
+          className="absolute text-[32px] right-4 top-4 cursor-pointer hover:scale-120 transform transition duration-300 active:scale-100"
           onClick={close}
         />
       </div>

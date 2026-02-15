@@ -36,9 +36,10 @@ const page = () => {
         <MyTech />
 
         <div className="pt-8 px-8 mx-auto max-w-[1200px]">
-          <h1 className="text-[60px] text-center font-bold text-[#c64623]">
+          <div className="text-[60px] max-w-max mx-auto font-bold text-[#c64623]">
             Adaptability
-          </h1>
+            <div className="bg-[#c64623] w-full h-[1px]"></div>
+          </div>
           <div className="flex justify-center gap-24">
             <img className="w-80" src="/AI.gif" alt="" />
             <div className="mt-[20px] max-w-[50%] text-[24px] flex flex-col gap-4">

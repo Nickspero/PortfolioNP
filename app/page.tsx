@@ -2,9 +2,11 @@ import Link from "next/link";
 import Television from "./Components/Television";
 import SocialLinks from "./Components/SocialLinks";
 import ContactBtn from "./Components/ContactBtn";
+import Shapes from "./Components/Shapes";
 
 export default function Home() {
   return (
+    <div className="w-full h-full">
     <div className="border-8 border-[#3bbad8] max-w-max max-h-max rounded-3xl mx-auto mt-[40px]">
       <div className="border-8 border-[#c64623] rounded-2xl">
         <div className="p-4 flex justify-center items-center">
@@ -29,5 +31,8 @@ export default function Home() {
       </div>
       <ContactBtn/>
     </div>
+    <Shapes/>
+    </div>
+
   );
 }
