@@ -13,9 +13,8 @@ const MyTech = () => {
   ];
 
   return (
-    <div className="border-y-5 border-t-[#3bbad8] border-b-[#3bbad8] shadow-2xl">
       <div className="border-y-5 border-t-[#c64623] border-b-[#c64623] overflow-hidden">
-        <div className="w-full bg-[#3bbad8] flex justify-center p-4">
+        <div className="w-full bg-gradient-to-br from-[#7FC8C9] to-[#3E8C8E] flex justify-center p-4">
           <div className="w-[70%]">
             <h1 className="text-[32px] font-bold">My Tech Stack:</h1>
             <div className="grid grid-cols-5 justify-items-center gap-4">
@@ -30,7 +29,6 @@ const MyTech = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

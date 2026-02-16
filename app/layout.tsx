@@ -2,7 +2,6 @@ import Nav from "./Components/Nav";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 import Contact from "./Components/Contact";
-import Shapes from "./Components/Shapes";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400","500","700"] });
 

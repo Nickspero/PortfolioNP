@@ -84,6 +84,46 @@ textarea:focus {
   position: absolute;
   width: 60px;
   height: 60px;
-  transition: transform .3s ease;
+}
+
+.hidden{
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 0;
+}
+
+.modal__open{
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  z-index: 30;
+}
+
+.toggle-switch {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transform: scale(1);
+  transition: transform 300ms;
+}
+
+.toggle-switch:hover {
+  transform: scale(1.25);
+}
+
+.red{
+  color: #c64623
+}
+.red__border{
+  border-color: #c64623;
+}
+.blue{
+  color: #3bbad8;
+}
+.blue__border{
+  border-color: #3bbad8;
 }
 
