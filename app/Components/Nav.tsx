@@ -30,28 +30,28 @@ const Nav = () => {
 
   return (
     <nav
-      className={`w-full flex px-4 justify-between sticky transition-opacity top-0 left-0 items-center ${hidden ? "opacity-0 pointer-events-none" : "opacity-100"}`}
+      className={`w-full flex px-4 justify-between sticky transition-opacity top-0 left-0 items-center ${hidden ? "opacity-0 pointer-events-none" : "opacity-100"} ${dark && "dark"}`}
     >
       <figure className="w-[88px] h-[88px]">
         <Link href={"/"}>
-          <img className="w-full h-full" src="/logo.png" alt="logo" />
+          <img className="w-full h-full logo" src="/logo.png" alt="logo" />
         </Link>
       </figure>
       <div className="flex font-bold">
-        <Link href="/about" className="relative mx-4 inline-block group">
+        <Link href="/about" className="nav__link mx-4">
           About Me
-          <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+          <span className="underline"></span>
         </Link>
-        <Link href="/projects" className="relative mx-4 inline-block group">
+        <Link href="/projects" className="nav__link mx-4">
           Projects
-          <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+          <span className="underline"></span>
         </Link>
         <div
           onClick={open}
-          className="relative mx-4 inline-block group cursor-pointer"
+          className="nav__link cursor-pointer mx-4"
         >
           Contact
-          <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+          <span className="underline"></span>
         </div>
         <div onClick={toggle}>
           {dark ? (

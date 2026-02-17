@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={`fixed bg-[#ede6d7] flex justify-center items-center top-0 right-0 w-full h-screen ${isOpen? "modal__open" : "hidden"} transition-opacity duration-300`}>
+    <div className={`modal fixed bg-[#ede6d7] flex justify-center items-center top-0 right-0 w-full h-screen transition-opacity duration-600 ${isOpen? "modal__open" : "hidden"} `}>
       <div className="max-w-[900px] w-[80%] h-[70%] p-14 rounded-2xl bg-gradient-to-r from-[#E76F51] to-[#5AA5A6] shadow-2xl relative">
         {!loading && !success && (
           <>

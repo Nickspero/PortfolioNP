@@ -3,50 +3,49 @@ import ContactBtn from "./ContactBtn";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#377e80] relative">
+    <footer className="foot-color relative">
       <div className="w-full h-[8px] bg-[#377e80]"></div>
       <div className="w-full h-[8px] bg-[#c64623] border-t-1 border-b-1 border-[#ede6d7]"></div>
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-4">
         <div className="flex justify-center">
           <div className="text-center">
             <figure className="my-4">
               <img
-                id="personal-logo"
-                src="/logo-border.png"
+                src="/logo.png"
                 alt=""
-                className="mx-auto w-[88px]"
+                className="mx-auto w-[88px] logo"
               />
             </figure>
 
             <div className="my-6">
               <Link
-                className="relative inline-block group mx-6 font-bold text-black"
+                className="nav__link mx-6 font-bold"
                 href="https://github.com/Nickspero"
                 target="_blank"
               >
                 Github
-                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                <span className="underline"></span>
               </Link>
               <Link
-                className="relative inline-block group mx-6 font-bold text-black"
+                className="nav__link mx-6 font-bold"
                 href="https://www.linkedin.com/in/nickpappas99"
                 target="_blank"
               >
                 LinkedIn
-                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                <span className="underline"></span>
               </Link>
-              <Link className="relative inline-block group mx-6 font-bold text-black" 
+              <Link className="nav__link mx-6 font-bold" 
               href="/contact">
                 Contact
-                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                <span className="underline"></span>
               </Link>
               <Link
-                className="relative inline-block group mx-6 font-bold text-black"
+                className="nav__link mx-6 font-bold"
                 href="./TechRes.pdf"
                 target="_blank"
               >
                 Resume
-                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                <span className="underline"></span>
               </Link>
             </div>
 

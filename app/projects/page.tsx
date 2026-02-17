@@ -79,13 +79,13 @@ const page = () => {
     <div className="h-full">
       <div className="p-4">
         <div className="mx-auto w-max flex flex-col justify-center items-center">
-          <h1 className="font-bold text-[60px] text-[#c64623]">
+          <h1 className="font-bold text-[60px] red">
             Some of My Projects
           </h1>
-          <p className="text-[24px] text-[#c64623]">
+          <p className="text-[24px] red">
             Code, Design, and everything in between.
           </p>
-          <div className="bg-[#c64623] w-full h-[1px] mt-3"></div>
+          <div className="title__underline mt-3"></div>
         </div>
         <div className="w-full max-w-[1500px] mx-auto mt-8 mb-[120px] grid grid-cols-4 grid-rows-2 gap-1">
           {projects.map((project, index) => (
@@ -106,9 +106,9 @@ const page = () => {
         <div className="flex flex-col mb-[120px] mx-auto w-full">
           {projects.map((project, index) => (
             <div className="mx-auto" id={project.title} key={index}>
-              <div className="bg-[#c64623] max-w-[1200px] h-[1px] "></div>
+              <div className="title__underline max-w-[1200px] "></div>
               <div className="p-12">
-                <img className="w-[200px]" src={project.logo} alt="" />
+                <img className="w-[200px] proj__logo" src={project.logo} alt="" />
                 <p className="mt-4 mb-4 max-w-[1000px] text-[20px]">
                   {project.desc}
                 </p>
@@ -132,7 +132,7 @@ const page = () => {
             href="#"
             className="text-[24px] mx-auto hover:scale-105 transform transition duration-300 cursor-pointer"
           >
-                <p className="font-bold flex justify-center my-auto text-[40px] text-[#c64623]">
+                <p className="font-bold flex justify-center my-auto text-[40px] red">
                   <FaRegArrowAltCircleUp />
                 </p>
                 <p className="font-bold text-[20px]">Back to top</p>
