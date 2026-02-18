@@ -17,7 +17,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${roboto.className} scroll-smooth`}>
-      <body className={`bg-[#ede6d7] ${dark && "dark" } `}>
+      <body className={`bg-[#ede6d7] ${dark && "dark"}`}>
         <main className="w-full relative h-screen">
         <Contact/>
         <Nav/>

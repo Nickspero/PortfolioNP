@@ -60,7 +60,7 @@ const Television = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-[350px] relative">
+    <div className="w-[200] md:w-[250] lg:w-[350] relative">
       <canvas
         ref={canvasRef}
         className="absolute w-[30%] h-[20%] top-[56%] left-[10%]"

@@ -107,18 +107,16 @@ textarea:focus {
   }
 }
 
-.hidden {
+.modal__hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
   z-index: 0;
 }
 
 .modal__open {
   opacity: 1;
   pointer-events: all;
-  visibility: visible;
-  z-index: 30;
+  z-index: 40;
 }
 
 .toggle-switch {
@@ -158,17 +156,23 @@ span {
   height: 1px;
 }
 
-.tech__wrapper{
+.tech__wrapper {
   border-top: 4px solid #c64623;
   border-bottom: 4px solid #c64623;
 }
 
-.tech__bg{
-  background: linear-gradient(to bottom right, #7FC8C9, #3E8C8E );
+.tech__bg {
+  background: linear-gradient(to bottom right, #7fc8c9, #3e8c8e);
 }
 
-.foot-color{
+.foot-color {
   background: #377e80;
+}
+
+.footer__border {
+  width: 100%;
+  height: 8px;
+  background-color: #c64623;
 }
 
 .dark {
@@ -205,26 +209,42 @@ span {
     background-color: white;
   }
 
-  .proj__logo{
+  .proj__logo {
     filter: invert() brightness(1.5);
   }
 
-  .modal{
+  .modal {
     background-color: #102a2e;
     color: black;
   }
 
-  .tech__wrapper{
-  border-top: 4px solid #3bbad8;
-  border-bottom: 4px solid #3bbad8;
+  .tech__wrapper {
+    border-top: 4px solid #3bbad8;
+    border-bottom: 4px solid #3bbad8;
+  }
+
+  .tech__bg {
+    background: linear-gradient(135deg, #121928, #1b7488);
+  }
+
+  .foot-color {
+    background: #121928;
+  }
+
+  .proj__logo {
+    filter: brightness(4);
+  }
+
+  .footer__border {
+    background-color: #3bbad8;
+  }
 }
 
-.tech__bg{
- background: linear-gradient(135deg, #121928, #1e2433);
-}
-
-.foot-color{
-  background: #121928;
-}
-
+@media (max-width:992px) {
+  .tech{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
 }

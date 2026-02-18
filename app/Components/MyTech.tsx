@@ -16,7 +16,7 @@ const MyTech = () => {
       <div className="tech__wrapper overflow-hidden">
         <div className="w-full tech__bg flex justify-center p-4">
           <div className="w-[70%]">
-            <h1 className="text-[32px] font-bold">My Tech Stack:</h1>
+            <h1 className="text-[24px] md:text-[32px] font-bold">My Tech Stack:</h1>
             <div className="grid grid-cols-5 justify-items-center gap-4">
               {techStack.map((tech, index) => (
                 <figure className="tech" key={index}>
@@ -25,7 +25,7 @@ const MyTech = () => {
                 </figure>
               ))}
             </div>
-            <p className="text-[24px] mt-6 text-right">And More!</p>
+            <p className="text-[24px] md:text-[32px] mt-6 text-right">And More!</p>
           </div>
         </div>
       </div>

@@ -4,8 +4,7 @@ import ContactBtn from "./ContactBtn";
 const Footer = () => {
   return (
     <footer className="foot-color relative">
-      <div className="w-full h-[8px] bg-[#377e80]"></div>
-      <div className="w-full h-[8px] bg-[#c64623] border-t-1 border-b-1 border-[#ede6d7]"></div>
+      <div className="footer__border border-t-1 border-b-1 border-black"></div>
       <div className="mx-auto px-4">
         <div className="flex justify-center">
           <div className="text-center">

@@ -15,14 +15,14 @@ const Shapes = () => {
   };
 
   return (
-    <div className="fixed w-full h-full z-10 top-20 left-0">
+    <div className="fixed w-full h-full z-10 top-20 left-0 [@media(max-width:1500px)]:hidden">
       <div onMouseMove={moveShapes} className="relative w-full h-full">
         <img className="shape top-10 left-20" src="/code.PNG" alt="" />
         <img className="shape top-60 left-80" src="/brackets.PNG" alt="" />
         <img className="shape top-110 left-10" src="/tools.PNG" alt="" />
         <img className="shape top-160 left-60" src="/heart.PNG" alt="" />
         <img className="shape top-10 right-40" src="/laptop.PNG" alt="" />
-        <img className="shape top-60 right-80" src="/fargments.PNG" alt="" />
+        <img className="shape top-60 right-70" src="/fargments.PNG" alt="" />
         <img className="shape top-110 right-30" src="/system.PNG" alt="" />
         <img className="shape top-160 right-60" src="/star.PNG" alt="" />
       </div>
