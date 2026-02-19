@@ -1,7 +1,7 @@
 const MyTech = () => {
   const techStack = [
     {title: "HTML",
-      img: "/HTML.png"
+      img: "/html.png"
     },
     {title: "CSS",
       img: "/CSS.png"
