@@ -6,8 +6,8 @@ const MyTech = () => {
     "React",
     "Firebase",
     "NextJS",
-    "VS Code",
-    "Tailwind CSS",
+    "VSCode",
+    "TailwindCSS",
     "Figma",
     "Vue",
   ];
@@ -21,7 +21,7 @@ const MyTech = () => {
               {techStack.map((tech, index) => (
                 <figure className="tech" key={index}>
                   <img className="tech__logo" src={`/${tech}.png`} alt="" />
-                  <p className="tech__name">{tech}</p>
+                  <p className="tech__name text-[12px] md:text-[16px]">{tech}</p>
                 </figure>
               ))}
             </div>

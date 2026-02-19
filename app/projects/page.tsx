@@ -115,10 +115,6 @@ const page = () => {
             <figure
               key={index}
               className="project__figure"
-              style={{
-                gridColumn: `span ${project.column}`,
-                gridRow: `span ${project.row}`,
-              }}
             >
               <a href={`#${project.title}`}>
                 <img className="project__img" src={project.longImg} alt="" />
