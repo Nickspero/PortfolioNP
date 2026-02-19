@@ -4,19 +4,19 @@ const MyTech = () => {
       img: "/html.png"
     },
     {title: "CSS",
-      img: "/CSS.png"
+      img: "/css.png"
     },
     {title: "JavaScript",
-      img: "/JavaScript.png"
+      img: "/javascript.png"
     },
     {title: "React",
-      img: "/React.png"
+      img: "/react.png"
     },
     {title: "Firebase",
-      img: "/Firebase.png"
+      img: "/firebase.png"
     },
     {title: "NextJS",
-      img: "/NextJS.png"
+      img: "/nextjs.png"
     },
     {title: "VS Code",
       img: "/VSCode.png"
@@ -25,10 +25,10 @@ const MyTech = () => {
       img: "/TailwindCSS.png"
     },
     {title: "Figma",
-      img: "/Figma.png"
+      img: "/figma.png"
     },
     {title: "Vue",
-      img: "/Vue.png"
+      img: "/vue.png"
     }
   ];
 
