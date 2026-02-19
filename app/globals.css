@@ -89,6 +89,7 @@ textarea:focus {
 .nav__link {
   position: relative;
   display: inline-block;
+  font-size: 16px;
 }
 
 .underline {
@@ -135,6 +136,11 @@ textarea:focus {
 
 span {
   color: #c64623;
+}
+
+.about__img{
+  width: 20rem;
+  height: 20rem;
 }
 
 .red {
@@ -247,4 +253,22 @@ span {
     display: flex;
     align-items: center;
   }
+
+  
+}
+
+@media (max-width:468px) {
+  .nav__link{
+    font-size: 12px;
+  }
+
+  .toggle-switch{
+    width: 20px;
+  }
+
+  .about__img{
+    width: 10rem;
+    height: 10rem;
+  }
+
 }

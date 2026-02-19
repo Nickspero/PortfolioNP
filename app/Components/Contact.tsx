@@ -42,7 +42,7 @@ const Contact = () => {
 
   return (
     <div className={`modal fixed bg-[#ede6d7] flex justify-center items-center top-0 right-0 w-full h-screen transition-opacity duration-600 ${isOpen? "modal__open" : "modal__hidden"}`}>
-      <div className="max-w-[900px] w-[80%] max-h-max p-14 rounded-2xl bg-gradient-to-r from-[#E76F51] to-[#5AA5A6] shadow-2xl relative">
+      <div className="w-[90%] md:max-w-[900px] md:w-[80%] max-h-max p-6 md:p-14 rounded-2xl bg-gradient-to-r from-[#E76F51] to-[#5AA5A6] shadow-2xl relative">
         {!loading && !success && (
           <>
             <h1 className="text-[40px] font-bold">Let's Talk!</h1>
@@ -68,7 +68,7 @@ const Contact = () => {
                 <textarea name="message" required></textarea>
               </div>
               <div className="flex justify-center">
-                <button className="bg-[#ede6d7] mt-2 w-[40%] text-[24px] px-6 py-3 rounded-2xl cursor-pointer hover:scale-105 transform transition duration-300 active:scale-100">
+                <button className="bg-[#ede6d7] mt-2 w-[40%] text-[16px] md:text-[24px] px-6 py-3 rounded-2xl cursor-pointer hover:scale-105 transform transition duration-300 active:scale-100">
                   Send!
                 </button>
               </div>

@@ -32,7 +32,7 @@ const Nav = () => {
     <nav
       className={`w-full flex px-4 justify-between sticky transition-opacity top-0 left-0 items-center ${hidden ? "opacity-0 pointer-events-none" : "opacity-100"} ${dark && "dark"}`}
     >
-      <figure className="w-[88px] h-[88px]">
+      <figure className="w-[60px] md:w-[88px]">
         <Link href={"/"}>
           <img className="w-full h-full logo" src="/logo.png" alt="logo" />
         </Link>
