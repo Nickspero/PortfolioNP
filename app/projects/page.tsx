@@ -114,7 +114,7 @@ const page = () => {
           {projects.map((project, index) => (
             <figure
               key={index}
-              className="project__figure"
+              className="project__figure--stack"
             >
               <a href={`#${project.title}`}>
                 <img className="project__img" src={project.longImg} alt="" />
