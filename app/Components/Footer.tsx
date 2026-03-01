@@ -1,7 +1,11 @@
 import Link from "next/link";
 import ContactBtn from "./ContactBtn";
+import { openModal } from "../store/useStore";
+
 
 const Footer = () => {
+  const open = openModal((state) => state.open);
+
   return (
     <footer className="foot-color relative">
       <div className="footer__border border-t-1 border-b-1 border-black"></div>
@@ -33,11 +37,11 @@ const Footer = () => {
                 LinkedIn
                 <span className="underline"></span>
               </Link>
-              <Link className="nav__link mx-4 md:mx-6 font-bold" 
-              href="/contact">
+              <div onClick={open} className="nav__link cursor-pointer mx-4 md:mx-6 font-bold" 
+              >
                 Contact
                 <span className="underline"></span>
-              </Link>
+              </div>
               <Link
                 className="nav__link mx-4 md:mx-6 font-bold"
                 href="./TechRes.pdf"

@@ -105,7 +105,7 @@ const page = () => {
               }}
             >
               <a href={`#${project.title}`}>
-                <img className="project__img" src={project.img} alt="" />
+                <img className="project__img" src={project.img} alt="project img" />
               </a>
             </figure>
           ))}
@@ -127,7 +127,7 @@ const page = () => {
             <div className="mx-auto" id={project.title} key={index}>
               <div className="title__underline max-w-[1200px] "></div>
               <div className="p-12">
-                <img className="w-[180px] md:w-[200px] proj__logo" src={project.logo} alt="" />
+                <img className="w-[180px] md:w-[200px] proj__logo" src={project.logo} alt="project logo" />
                 <p className="mt-4 mb-4 max-w-[1000px] text-[16px] md:text-[20px]">
                   {project.desc}
                 </p>

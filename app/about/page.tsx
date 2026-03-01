@@ -30,7 +30,7 @@ const page = () => {
                 </span>
               </p>
             </div>
-            <img className="about__img" src="/UX_UI.gif" alt="" />
+            <img className="about__img" src="/UX_UI.gif" alt="UX img" />
           </div>
 
         </div>
@@ -43,7 +43,7 @@ const page = () => {
             <div className="title__underline"></div>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 md:gap-24 md:flex-row">
-            <img className="about__img" src="/AI.gif" alt="" />
+            <img className="about__img" src="/AI.gif" alt="AI img" />
             <div className="md:mt-[20px] text-[24px] flex flex-col gap-4 md:max-w-[50%]">
               <p className="text-[16px] md:text-[22px] lg:text-[24px]">
                 I embrace the rapid pace of the abrupt technological changes we

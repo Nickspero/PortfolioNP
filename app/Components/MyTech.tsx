@@ -40,7 +40,7 @@ const MyTech = () => {
             <div className="grid grid-cols-5 justify-items-center my-4 gap-4">
               {techStack.map((tech, index) => (
                 <figure className="tech" key={index}>
-                  <img className="tech__logo" src={tech.img} alt="" />
+                  <img className="tech__logo" src={tech.img} alt="tech-logo" />
                   <p className="tech__name text-[12px] md:text-[16px]">{tech.title}</p>
                 </figure>
               ))}
